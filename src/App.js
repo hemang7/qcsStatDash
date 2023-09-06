@@ -87,9 +87,7 @@ function App() {
   };
 
   const calculateCV = (column) => {
-    const values = array
-      .map((item) => parseFloat(item[column]))
-      .filter((value) => !isNaN(value));
+
     const meanValue = calculateMean(column);
     const stdDeviation = calculateStdDev(column);
 

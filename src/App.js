@@ -87,7 +87,9 @@ function App() {
   };
 
   const calculateCV = (column) => {
-
+    // const values = array
+    //   .map((item) => parseFloat(item[column]))
+    //   .filter((value) => !isNaN(value));
     const meanValue = calculateMean(column);
     const stdDeviation = calculateStdDev(column);
 
@@ -220,6 +222,7 @@ function App() {
             >
               IMPORT FILE
             </button>
+            <p p className="text-gray-500 mt-3 text-sm ">Large datasets may take a while to load, please be patient.</p>
           </form>
 
           {error && <p className="text-red-500 mt-2">{error}</p>}
